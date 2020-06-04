@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+</head>
+
+<body>
+
+  <script>
+    //题目2 控制台n行三角形
+    $(function () {
+      var n
+      n = prompt("请输入1~100的整数")
+      triangle(parseInt(n))
+    })
+    function triangle(n) {
+      for (var i = 0; i < n; i++) {
+        var str = ''
+        for (var j = 0; j <= i; j++) {
+          str += i + '\t'
+        }
+        console.log(str)
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: burlywood;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="color" id="inputcolor">
+
+  <script>
+    //题目1 改变网页皮肤
+    document.getElementById('inputcolor').onchange = function () {
+      document.getElementById('inputcolor').click();
+      document.body.style.background = this.value;
+    };
+  </script>
+
+
+</body>
+
+</html>

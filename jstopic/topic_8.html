@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+</head>
+
+<body>
+  <img class="image" src="https://i.picsum.photos/id/217/536/354.jpg" />
+
+  <script>
+    //题目8 鼠标移入切换图片
+    $(function () {
+      $(".image").mousemove(function () {
+        this.src = 'https://i.picsum.photos/id/866/536/354.jpg'
+      })
+      $(".image").mouseout(function () {
+        this.src = 'https://i.picsum.photos/id/217/536/354.jpg'
+      })
+    })
+  </script>
+</body>
+
+</html>
